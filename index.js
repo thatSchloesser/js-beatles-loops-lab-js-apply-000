@@ -3,7 +3,9 @@ function theBeatlesPlay(musicians, instruments){
   let arr = []
   
   for(var i=0; i<musicians.length; i++){
-    arr.push('${musicians[i]} plays ${instruments[i]}')
+    
+    //interpolation didn't work here for some reason
+    arr.push(musicians[i] + " plays " + instruments[i])
   }
   return arr
 }
